@@ -16,10 +16,9 @@ link() {
   ln -s "$from" "$to"
 }
 
-# ZSH Symbolic Links
-for location in $(find $dotfiles/zsh -name '.*'); do
+# Symbolic Links
+for location in $(find $dotfiles/* -name '.*'); do
   file="${location##*/}"
   file="${file%.sh}"
   link "$location" "$HOME/$file"
 done
-
