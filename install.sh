@@ -4,4 +4,4 @@ mkdir -p $dir
 cd $dir
 git clone --recursive git://github.com/karlboyle/dotfiles.git
 cd dotfiles
-sudo bash symlink-dotfiles.sh
+./symlink-dotfiles.sh
