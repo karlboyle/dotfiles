@@ -27,3 +27,9 @@ export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Load the shell dotfiles
+for file in $HOME/.{aliases.zsh,functions.zsh,paths.zsh,scripts.zsh,vars.zsh}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;

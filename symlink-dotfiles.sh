@@ -1,8 +1,6 @@
 #!/bin/zsh
 
-dev="$HOME/Developer"
-dotfiles="$dev/personal/dotfiles"
-
+dotfiles="$HOME/workspace/dotfiles"
 if [[ -d "$dotfiles" ]]; then
   echo "Symlinking dotfiles from $dotfiles"
 else
@@ -18,8 +16,10 @@ link() {
   ln -s "$from" "$to"
 }
 
-for location in $(find home -name '.*'); do
+# ZSH Symbolic Links
+for location in $(find $dotfiles/zsh -name '.*'); do
   file="${location##*/}"
   file="${file%.sh}"
-  link "$dotfiles/$location" "$HOME/$file"
+  link "$location" "$HOME/$file"
 done
+
