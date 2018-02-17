@@ -1,0 +1,24 @@
+[alias]
+        c = commit -am
+        up = pull
+        p = push
+        s = status -s
+        df = diff --color --color-words --abbrev
+
+        # GIT LOG - PICK ONE?
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+[color]
+        ui = always
+[user]
+        # name = Karl Boyle
+        # email = karlboyle@gmail.com
+[github]
+  user = karlboyle
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
