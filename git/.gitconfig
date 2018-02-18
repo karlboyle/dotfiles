@@ -7,7 +7,6 @@
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
-
 [color]
         ui = always
 [user]
@@ -20,3 +19,5 @@
         smudge = git-lfs smudge -- %f
         process = git-lfs filter-process
         required = true
+[includeIf "gitdir:~/work/"]
+  path = .gitconfig-work
