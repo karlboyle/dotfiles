@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-dotfiles="$HOME/workspace/dotfiles"
+dotfiles="$HOME/personal/dotfiles"
 if [[ -d "$dotfiles" ]]; then
   echo "Symlinking dotfiles from $dotfiles"
 else
