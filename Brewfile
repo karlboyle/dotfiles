@@ -6,10 +6,15 @@ brew 'gradle'
 brew 'maven'
 brew 'yarn'
 brew 'go'
-# brew 'bash'
-# brew install elasticsearch
-brew install kafka
-brew install apache-flink
+brew 'bash'
+brew 'htop'
+brew 'prettyping'
+brew 'fd'
+brew 'bat'
+brew 'thefuck'
+brew 'fzf'
+brew 'icdiff'
+brew 'tldr'
 
 
 cask 'java'

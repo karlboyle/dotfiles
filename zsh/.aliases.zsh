@@ -43,6 +43,19 @@ alias .....="cd ../../../.."
 alias mkdir="mkdir -p"
 alias md="mkdir"
 
+# Shortcuts
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias w="cd ~/work"
+alias g="git"
+alias h="history"
+alias j="jobs"
+
+alias sys_info='sw_vers'
+alias reload!='. ~/.zshrc'
+
+alias copypath='pwd|pbcopy'
+
 # Copy my public key to the pasteboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'"
 
@@ -54,3 +67,17 @@ alias undocommit="git reset --soft 'HEAD^'"
 # Show/hide all desktop icons (useful when presenting)
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+
+# brew install prettyping
+alias ping='prettyping --nolegend'
+
+#brew install htop
+alias top="htop"
+
+# brew install bat
+#alias cat='bat'
+# alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias c='bat'
+
+# brew install thefuck
+eval $(thefuck --alias)
