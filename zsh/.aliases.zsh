@@ -79,5 +79,5 @@ alias top="htop"
 # alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias c='bat'
 
-# brew install thefuck
-eval $(thefuck --alias)
+# slightly more friendly alias
+alias ffs='fuck'

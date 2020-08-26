@@ -59,3 +59,6 @@ unset file;
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# brew install thefuck
+eval $(thefuck --alias)
