@@ -49,7 +49,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Load the shell dotfiles
-for file in $HOME/.{aliases.zsh,functions.zsh,paths.zsh,scripts.zsh,vars.zsh}; do
+for file in $HOME/.{aliases.zsh,functions.zsh,paths.zsh,scripts.zsh}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
